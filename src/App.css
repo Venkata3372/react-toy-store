@@ -1,38 +1,87 @@
-.App {
+body {
+  margin: 0;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100vw;
+  max-width: 100%; /* Maximum width is 100% */
+  margin: 0 auto;
+  padding: 0 10px;
+  background-color: #1deb50;
+  color: white;
+  padding: 5px 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footer {
+  width: 100%;
+  background-color: #90e91c;
+  max-width: 1200px;
+  margin: 0 auto; 
+  padding: 5px 0;
+  text-align: center;
+  -webkit-text-fill-color: aliceblue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.item-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.totals-container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; 
+  background-color: #0f13e7;
+  color: white;
+  padding: 5px 0;
+  text-align: right;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.item-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.item-name {
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item-price {
+  margin-bottom: 10px;
 }
+
+.item-button {
+  margin-bottom: 10px;
+}
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e91313;
+  margin: 10px 0;
+}
+
+h5 {
+  font-size: 18px;
+  font-style: oblique;
+  font-weight: normal;
+  color: #666666;
+  margin: 10px 0;
+}
+
